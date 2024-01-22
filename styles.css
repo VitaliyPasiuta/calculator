@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  margin-top: 16px;
+  width: 320px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: black;
+}
+
+.output {
+  color: white;
+}
+
+.output__current-value, .output__previus-value {
+  display: flex;
+  justify-content: end;
+  margin: 0.5rem;
+  height: 2rem;
+  font-size: 1.3rem;
+}
+
+.input {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(5,64px);
+  grid-template-columns: repeat(4,64px);
+  gap: 8px;
+}
+
+.input > button {
+  border: 0;
+  border-radius: 32px;
+  font-size: 1rem;
+}
+
+.two-section {
+  grid-column: span 2;
+}
